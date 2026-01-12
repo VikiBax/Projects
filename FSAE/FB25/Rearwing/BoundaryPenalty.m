@@ -1,0 +1,31 @@
+function penalty = BoundaryPenalty(Param,validmodel)
+
+%set tolerances and boundaries of Front Wing elements 2,3
+xtol = 0; ytol = 0; 
+xmax = 279 - xtol; ymax = 263 - ytol; 
+
+%Known cord lengths of FW elements 2,3
+w2c = 220; w3c = 160; 
+
+validparam = Param(1:3); 
+
+validparam = (validparam(1:3) - 12.3036) ./ 8.9031;
+validparam = [validparam , validparam(1)*validparam(2), validparam(2)*validparam(3)];
+
+penalty = 0; 
+%Xmax condition 
+if w2c*cosd(Param(1)) + Param(2)*cosd(Param(3)) + w3c*cosd(Param(4)) + Param(5)*cosd(Param(6)) > xmax
+    penalty = penalty + 1e4;
+elseif w2c*sind(Param(1)) + Param(2)*sind(Param(3)) + w3c*sind(Param(4)) + Param(5)*sind(Param(6)) > ymax
+    penalty = penalty + 1e4;
+elseif Param(4) < Param(1)
+    penalty = penalty + 1e4;
+elseif abs(Param(4)-Param(1)) < 3
+    penalty = penalty + 1e4;
+elseif predict(validmodel, validparam) < .7
+    penalty = penalty + 1e4;
+else 
+    penalty = penalty;
+end
+end
+

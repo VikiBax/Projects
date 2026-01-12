@@ -1,0 +1,62 @@
+%Clearing Workspace 
+clear; clc
+
+%Loading data 
+Set = "ValidationSet2.csv";        %Rename to dataset
+data = readmatrix(Set);
+
+%Extracting inputs and outputs 
+inputs = data(1:128,4:6); 
+outputs = data(1:128,14);
+
+%% Polynomial features
+%Normalize inputs 
+inputs_normalized = (inputs(1:128,1:3) - mean(inputs(1:128))) ./ std(inputs(1:128));
+
+%Set degree of model (Should be locked at quadratic) 
+poly_degree = 2;
+
+inputs_poly = [];
+inputs_poly = [ inputs_poly, inputs(:,1) .* inputs(:,2)];
+inputs_poly = [ inputs_poly, inputs(:,2) .* inputs(:,3)];
+
+%for i = 1:size(inputs_normalized, 2)
+%    for j = i:size(inputs_normalized, 2)
+%        inputs_poly = [inputs_poly, inputs_normalized(:, i) .* inputs_normalized(:, j)];
+%    end
+%end
+inputs_poly = [inputs_normalized, inputs_poly]; % Include original inputs
+
+%% Regression Model 
+% Fit quadratic regression model
+mdl = fitglm(inputs_poly, outputs, 'Distribution', 'binomial', 'Link', 'logit');
+predicted_probs = predict(mdl, inputs_poly);
+
+threshold = .7;
+
+% Separate "Passed" and "Failed" based on actual outcomes
+passed_indices = (outputs == 1); % Actual passed
+failed_indices = (outputs == 0); % Actual failed
+
+% Plot the data
+figure;
+hold on;
+
+% Blue for "Passed" runs (real data points where outputs == 1)
+scatter(predicted_probs(passed_indices), outputs(passed_indices), ...
+        50, 'b', 'filled', 'DisplayName', 'Passed');
+
+% Red for "Failed" runs (real data points where outputs == 0)
+scatter(predicted_probs(failed_indices), outputs(failed_indices), ...
+        50, 'r', 'filled', 'DisplayName', 'Failed');
+
+% Customize the plot
+xlabel('Predicted Probability');
+ylabel('Actual Outcome');
+title('Real Data Color-Coded by Predicted Value');
+legend('Location', 'best');
+grid on;
+hold off;
+
+save('ValidationModel')
+

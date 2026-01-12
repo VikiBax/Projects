@@ -1,0 +1,81 @@
+% Load data from CSV file
+data = readmatrix('TestData.csv');
+
+% Extract inputs (columns 4-9) and outputs (column 12)
+inputs = data(:, 4:9); % Second AoA, Gap Size, etc.
+outputs = data(:, 12); % L/D values
+
+% Handle missing data by imputing missing values with column means
+for col = 1:size(inputs, 2)
+    nan_indices = isnan(inputs(:, col));
+    inputs(nan_indices, col) = mean(inputs(~nan_indices, col));
+end
+
+% Define ranges for optimization
+ranges = [
+    14, 22;    % Second AoA
+    15, 35;    % Second Gap Size
+    115, 135;  % Second Gap Angle
+    30, 40;    % Third AoA
+    5, 12;     % Third Gap Size
+    57, 72     % Third Gap Angle
+];
+lb = ranges(:, 1); % Lower bounds
+ub = ranges(:, 2); % Upper bounds
+
+% **Random Forest Regression Model**
+disp('Training Random Forest regression model...');
+% Train the model
+hyperparams = struct('NumTrees', 500, 'MinLeafSize', 5, 'MaxNumSplits', 50);
+rf_model = TreeBagger(hyperparams.NumTrees, inputs, outputs, ...
+                      'Method', 'regression', 'MinLeafSize', hyperparams.MinLeafSize);
+
+% Predict outputs for all test cases
+predicted_outputs_rf = predict(rf_model, inputs);
+
+% Generate a new test case with optimal L/D (maximize the model prediction)
+disp('Finding optimal test case for Random Forest model...');
+options = optimoptions('particleswarm', 'Display', 'iter', 'MaxIterations', 100);
+optimal_inputs_rf = particleswarm(@(x) -predict(rf_model, x), size(inputs, 2), lb, ub, options);
+
+disp('Optimal test case (Random Forest):');
+disp(optimal_inputs_rf);
+
+% Predict L/D ratio for the optimal test case
+predicted_LD_rf_optimal = predict(rf_model, optimal_inputs_rf);
+disp(['Predicted L/D ratio for optimal inputs: ', num2str(predicted_LD_rf_optimal)]);
+
+% Visualization: Actual vs Predicted L/D
+figure;
+
+% Scatter plot of actual vs predicted values
+scatter(outputs, predicted_outputs_rf, 'b', 'DisplayName', 'Random Forest Predictions');
+hold on;
+
+% Add x = y line (perfect prediction)
+x = min(outputs):0.01:max(outputs); % Range of x
+plot(x, x, 'k--', 'DisplayName', 'x = y'); % Perfect prediction line
+
+% Add ±1% error bounds
+upper_bound = x * 1.01; % +1% line
+lower_bound = x * 0.99; % -1% line
+plot(x, upper_bound, 'g--', 'DisplayName', '+1% Error');
+plot(x, lower_bound, 'g--', 'DisplayName', '-1% Error');
+
+% Add legend, labels, and title
+legend('show',Location='northwest');
+xlabel('Actual L/D');
+ylabel('Predicted L/D');
+title('Actual vs Predicted L/D (Random Forest Model)');
+hold off;
+
+% R^2 
+outputs = outputs(2:end, :);
+residuals = outputs - predicted_outputs_rf(2:end,:);
+SS_res = sum((residuals).^2);
+SS_tot = sum((outputs - mean(outputs)).^2);
+R_squared = 1 - (SS_res / SS_tot);
+fprintf('R^2 for Random Forest Model: %.4f\n', R_squared);
+
+
+
