@@ -88,9 +88,6 @@ for i = 1:10
     display(i);
 end
 
-%disp('Optimal test case using particleswarm:');
-%disp(optimal_inputs_1);
-
 
 %% Predict L/D for the optimal inputs
 optimal_inputs_normalized = (optimal_inputs_1 - mean(inputs)) ./ std(inputs);
