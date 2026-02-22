@@ -4,11 +4,11 @@
 clear; clc;
 
 %% Load data
-raw_csv  = "01_71.csv";
+raw_csv  = "01_89.csv";
 raw_data = readmatrix(raw_csv);
 
 % Inputs: AoA1 AoA2 AoA3 X1 X2 Z1 Z2 (7 vars)
-X_raw = double(raw_data(:, 6:12));
+X_raw = double(raw_data(:, 6:13));
 
 % Outputs: CarL CarD RWLift RWDrag
 Y      = double(raw_data(:, 14:17));

@@ -4,16 +4,16 @@
 clear; clc;
 
 %% Import Data
-raw_csv  = "01_84.csv";
+raw_csv  = "01_89.csv";
 raw_data = readmatrix(raw_csv);
-raw_data = raw_data(1:84,:);
+raw_data = raw_data(1:89,:);
 
 %% Inputs / Outputs
-% Inputs: AoA1 ; AoA2 ; AoA3 ; X1 ; X2 ; Z1 ; Z2 ; offset  (columns 5:11)
+% Inputs: AoA1 ; AoA2 ; AoA3 ; X1 ; X2 ; Z1 ; Z2 ; offset
 inputs_raw = raw_data(:, 6:13);
 
-% Outputs: Car Lift ; Car Drag ; RW Lift ; RW Drag (columns 13:16)
-outputs = raw_data(:, 15:18);
+% Outputs: Car Lift ; Car Drag ; RW Lift ; RW Drag
+outputs = raw_data(:, 14:17);
 
 output_lift = outputs(:,3); % RW Lift
 output_drag = outputs(:,4); % RW Drag
@@ -70,7 +70,7 @@ problem = createOptimProblem('fmincon', ...
     'options', opts);
 
 %% MultiStart to surface multiple local maxima
-nStarts     = 1000;     % increase (100-500) for more local maxima discovery
+nStarts     = 1000;    % increase (100-500) for more local maxima discovery
 maxUnique   = 15;      % how many unique local maxima to keep
 uniqueTol   = 1e-6;    % distance tolerance for uniqueness in raw input space
 
@@ -106,8 +106,8 @@ for k = 1:size(XS,1)
     else
         d = vecnorm(Xuniq - XS(k,:), 2, 2);
         if all(d > uniqueTol)
-            Xuniq = [Xuniq; XS(k,:)]; %#ok<AGROW>
-            Yuniq = [Yuniq; YS(k)];   %#ok<AGROW>
+            Xuniq = [Xuniq; XS(k,:)]; 
+            Yuniq = [Yuniq; YS(k)]; 
         end
     end
     if size(Xuniq,1) >= maxUnique
