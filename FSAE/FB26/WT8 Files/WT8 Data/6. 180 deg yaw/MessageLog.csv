@@ -1,0 +1,448 @@
+4/24/2026 3:08:13 PM,4,Info,WT8-GUI,83119591,,MOC initialization at WT8-GUI Complete
+4/24/2026 3:08:13 PM,141016,Info,WT8-GUI,83119592,,"MOC at WT8-GUI: Beginning reload of configuration: ""_Facility""."
+4/24/2026 3:08:15 PM,141003,Info,WT8-GUI,83119593,,"MOC at WT8-GUI: Configuration loaded: ""_Facility""."
+4/24/2026 3:08:15 PM,0,Debug,WT8-GUI,83119594,"Spawn VI.vi/SELECT AND SPAWN TEST EXECUTIVE.vi/Load Test.vi/Reload Config.vi/TestVIEW LV Controller.vi
+",C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.TestExecution.llb\TEST EXECUTIVE.VI
+4/24/2026 3:08:15 PM,0,Debug,WT8-GUI,83119595,"Spawn VI.vi/TEST EXECUTIVE.VI
+",C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.DataManager.MOC.llb\DTMGR EXECUTIVE FOR MOC.vi
+4/24/2026 3:09:13 PM,141002,Info,WT8-GUI,83119596,,"MOC at WT8-GUI: Run Definition loaded: ""New Run Definition 0"", Configuration: ""_Facility""."
+4/24/2026 3:09:18 PM,3,Info,WT8-GUI,83119597,,MOC at WT8-GUI Reload Database Settings Complete
+4/24/2026 3:09:27 PM,29,Info,WT8-GUI,83119598,MOC,MOC Executive Commander Initiated.
+4/24/2026 3:09:37 PM,1,Info,WT8-GUI,83119599,MOC,MOC Started/Initialized
+4/24/2026 3:09:37 PM,0,Debug,WT8-GUI,83119600,"Spawn VI.vi/EXECUTIVE INTERFACE EXEC.vi/DTMGR EXECUTIVE FOR MOC.vi
+",C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.CommandServer.llb\cmd server for Multi-Devices Process.vi
+4/24/2026 3:09:37 PM,0,Debug,WT8-GUI,83119601,MOC,Cmd Server Initialized Successfully  at Port 28880
+4/24/2026 3:09:37 PM,3,Info,WT8-GUI,83119602,OPC,OPC Reload Database Settings Complete
+4/24/2026 3:09:37 PM,301006,Info,WT8-GUI,83119603,OPC,2 OPC Server Configurations will be initialized.
+4/24/2026 3:09:37 PM,301007,Info,WT8-GUI,83119604,OPC,Initializing server: localhost/Graybox.Simulator.1
+4/24/2026 3:09:37 PM,301007,Info,WT8-GUI,83119605,OPC,Initializing server: OPER-PC/National Instruments.Variable Engine.1
+4/24/2026 3:09:38 PM,32,Debug,WT8-GUI,83119606,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.OPCClient.llb\PERFORMANCE FUNCTIONS OPC.vi Task Started.
+4/24/2026 3:09:38 PM,3,Info,WT8-GUI,83119607,NI-DAQmx,NI-DAQmx Reload Database Settings Complete
+4/24/2026 3:09:38 PM,32,Debug,WT8-GUI,83119608,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.NI-DAQmx.llb\PERFORMANCE FUNCTIONS NI-DAQMX.vi Task Started.
+4/24/2026 3:09:39 PM,3,Info,WT8-GUI,83119609,BALANCE,BALANCE Reload Database Settings Complete
+4/24/2026 3:09:39 PM,1,Info,WT8-GUI,83119610,BALANCE,BALANCE Started/Initialized
+4/24/2026 3:09:39 PM,2,Info,WT8-GUI,83119611,BALANCE,BALANCE entering Idle mode
+4/24/2026 3:09:39 PM,0,Debug,WT8-GUI,83119612,BALANCE,"Sent balance command ""SetBalanceData#1#10""."
+4/24/2026 3:09:39 PM,0,Debug,WT8-GUI,83119613,BALANCE,"Sent balance command ""Req_BalanceForces#1""."
+4/24/2026 3:09:39 PM,0,Debug,WT8-GUI,83119614,BALANCE,"Sent balance command ""Req_LoadCellData#1""."
+4/24/2026 3:09:39 PM,0,Debug,WT8-GUI,83119615,BALANCE,"Sent balance command ""Req_EquipmentData#5.000000""."
+4/24/2026 3:09:39 PM,0,Debug,WT8-GUI,83119616,BALANCE,"Sent balance command ""StartData""."
+4/24/2026 3:09:39 PM,0,Debug,WT8-GUI,83119617,BALANCE,"Sent balance command ""Req_TareData""."
+4/24/2026 3:09:39 PM,32,Debug,WT8-GUI,83119618,,C:\Program Files\Jacobs\Test SLATE\Ford.TestSLATE.Balance.llb\Performance Functions.vi Task Started.
+4/24/2026 3:09:39 PM,3,Info,WT8-GUI,83119619,PLCRFMDataCopier,PLCRFMDataCopier Reload Database Settings Complete
+4/24/2026 3:09:39 PM,1,Info,WT8-GUI,83119620,PLCRFMDataCopier,PLCRFMDataCopier Started/Initialized
+4/24/2026 3:09:39 PM,2,Info,WT8-GUI,83119621,PLCRFMDataCopier,PLCRFMDataCopier entering Idle mode
+4/24/2026 3:09:40 PM,301016,Error,WT8-GUI,83119622,OPC,"Unable to connect to OPER-PC / National Instruments.Variable Engine.1 continuing to try connection to other servers, other successful connections will still run. Message from failed connection was: Error connecting to server OPER-PC/National Instruments.Variable Engine.1"
+4/24/2026 3:09:40 PM,301008,Info,WT8-GUI,83119623,OPC,Successfully started server: localhost/Graybox.Simulator.1
+4/24/2026 3:09:40 PM,1,Info,WT8-GUI,83119624,OPC,OPC Started/Initialized
+4/24/2026 3:09:40 PM,32,Debug,WT8-GUI,83119625,,C:\Program Files\Jacobs\Test SLATE\Ford.TestSLATE.PlcRFMDataCopier.llb\Performance Functions.vi Task Started.
+4/24/2026 3:09:40 PM,3,Info,WT8-GUI,83119626,ELMS,ELMS Reload Database Settings Complete
+4/24/2026 3:09:40 PM,32,Debug,WT8-GUI,83119627,,C:\Program Files\Jacobs\Test SLATE\Ford.TestSLATE.ELMS.llb\Performance Functions.vi Task Started.
+4/24/2026 3:09:40 PM,1,Info,WT8-GUI,83119628,USER INPUTS,USER INPUTS Started/Initialized
+4/24/2026 3:09:41 PM,32,Debug,WT8-GUI,83119629,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.CalcCustom.llb\PERFORMANCE FUNCTIONS USER INPUTS.vi Task Started.
+4/24/2026 3:09:41 PM,3,Info,WT8-GUI,83119630,HM,HM Reload Database Settings Complete
+4/24/2026 3:09:41 PM,1,Info,WT8-GUI,83119631,HM,HM Started/Initialized
+4/24/2026 3:09:41 PM,6,Warning,WT8-GUI,83119632,HM,"Channel Error Detection disabled because the following Drivers are Initializing, In Cal, or In Diag:  NI-DAQmx ELMS .  Channel Error Detection  Inactive"
+4/24/2026 3:09:42 PM,32,Debug,WT8-GUI,83119633,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.HealthMonitor.llb\PERFORMANCE FUNCTIONS HEALTH MONITOR.vi Task Started.
+4/24/2026 3:09:42 PM,3,Info,WT8-GUI,83119634,TEST SEQUENCER,TEST SEQUENCER Reload Database Settings Complete
+4/24/2026 3:09:42 PM,361020,Warning,WT8-GUI,83119635,Test Sequencer,"The following Test Seq Tags are not defined: Test_Seq_Current_Selective_Schedule, Test_Seq_Current_Selective_Schedule_Desc"
+4/24/2026 3:09:42 PM,32,Debug,WT8-GUI,83119636,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.Sequencer.llb\PERFORMANCE FUNCTIONS TESTSEQUENCER.VI Task Started.
+4/24/2026 3:09:42 PM,3,Info,WT8-GUI,83119637,CVGCALCSTAT,CVGCALCSTAT Reload Database Settings Complete
+4/24/2026 3:09:43 PM,1,Info,WT8-GUI,83119638,CVGCALCSTAT,CVGCALCSTAT Started/Initialized
+4/24/2026 3:09:43 PM,2,Info,WT8-GUI,83119639,CVGCALCSTAT,CVGCALCSTAT entering Idle mode
+4/24/2026 3:09:43 PM,32,Debug,WT8-GUI,83119640,,C:\Program Files\Jacobs\Test SLATE\Ford.TestSLATE.CalcStat.llb\PERFORMANCE FUNCTIONS.vi Task Started.
+4/24/2026 3:09:43 PM,3,Info,WT8-GUI,83119641,CALCEQUATION,CALCEQUATION Reload Database Settings Complete
+4/24/2026 3:09:43 PM,1,Info,WT8-GUI,83119642,CALCEQUATION,CALCEQUATION Started/Initialized
+4/24/2026 3:09:43 PM,2,Info,WT8-GUI,83119643,CALCEQUATION,CALCEQUATION entering Idle mode
+4/24/2026 3:09:44 PM,32,Debug,WT8-GUI,83119644,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.CalcEquation.llb\performance functions calcequation.vi Task Started.
+4/24/2026 3:09:44 PM,1,Info,WT8-GUI,83119645,CHARACTER,CHARACTER Started/Initialized
+4/24/2026 3:09:44 PM,32,Debug,WT8-GUI,83119646,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.CalcCustom.llb\PERFORMANCE FUNCTIONS CHARACTER.vi Task Started.
+4/24/2026 3:09:44 PM,3,Info,WT8-GUI,83119647,ADTMGR,ADTMGR Reload Database Settings Complete
+4/24/2026 3:09:45 PM,32,Debug,WT8-GUI,83119648,,C:\Program Files\Jacobs\Test SLATE\Ford.TestSLATE.ADTMgr.llb\Performance Functions.vi Task Started.
+4/24/2026 3:09:45 PM,3,Info,WT8-GUI,83119649,CANEXPORT,CANEXPORT Reload Database Settings Complete
+4/24/2026 3:09:45 PM,32,Debug,WT8-GUI,83119650,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.CAN.llb\Performance Functions CAN EXPORT.vi Task Started.
+4/24/2026 3:09:46 PM,3,Info,WT8-GUI,83119651,DATASTORE,DATASTORE Reload Database Settings Complete
+4/24/2026 3:09:46 PM,32,Debug,WT8-GUI,83119652,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.DataStorage.llb\PERFORMANCE FUNCTIONS DATA STORAGE.vi Task Started.
+4/24/2026 3:09:46 PM,3,Info,WT8-GUI,83119653,EMAILMSG,EMAILMSG Reload Database Settings Complete
+4/24/2026 3:09:46 PM,18,Info,WT8-GUI,83119654,EMAILMSG,EMAILMSG Start/Initialize failed
+4/24/2026 3:09:46 PM,23,Info,WT8-GUI,83119655,EMAILMSG,EMAILMSG Aborted due to preceding error
+4/24/2026 3:09:46 PM,6,Error,WT8-GUI,83119656,EMAILMSG,EMAILMSG Inactive
+4/24/2026 3:09:47 PM,32,Debug,WT8-GUI,83119657,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.EmailMessaging.llb\PERFORMANCE FUNCTIONS EMAILMSG.vi Task Started.
+4/24/2026 3:09:47 PM,3,Info,WT8-GUI,83119658,ExcelTools,ExcelTools Reload Database Settings Complete
+4/24/2026 3:09:47 PM,531,Warning,WT8-GUI,83119659,ExcelTools,"An error occurred opening Tag ""D2 Excel Log Template"". Tag not found or not a Character (CH) Type."
+4/24/2026 3:09:47 PM,0,Debug,WT8-GUI,83119660,Excel Tools,"Post-init Config.Inits_Reports:
+<Cluster>
+<Name>Config.Inits_Reports</Name>
+<NumElts>6</NumElts>
+<String>
+<Name>CustomInit</Name>
+<Val>C:\Data\CustomInit\Custom_Init_Template.xls</Val>
+</String>
+<String>
+<Name>CustomReportWorkbook</Name>
+<Val></Val>
+</String>
+<Boolean>
+<Name>UseCustomInit</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>ShowOperator</Name>
+<Val>0</Val>
+</Boolean>
+<Array>
+<Name>AutoPrint</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>get_Item</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>CustomReportSheets</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>get_Item</Name>
+<Val></Val>
+</String>
+</Array>
+</Cluster>
+"
+4/24/2026 3:09:47 PM,0,Debug,WT8-GUI,83119661,Excel Tools,"Post-init Configuration:
+<Cluster>
+<Name>Configuration</Name>
+<NumElts>28</NumElts>
+<Refnum>
+<Name>Application</Name>
+<RefKind>ActiveX</RefKind>
+<ActiveXType>
+<GUID>{000208D5-0000-0000-C000-000000000046}</GUID>
+</ActiveXType>
+<Val>0x00000000</Val>
+</Refnum>
+<Refnum>
+<Name>Workbook</Name>
+<RefKind>ActiveX</RefKind>
+<ActiveXType>
+<GUID>{000208DA-0000-0000-C000-000000000046}</GUID>
+</ActiveXType>
+<Val>0x00000000</Val>
+</Refnum>
+<Refnum>
+<Name>Worksheet</Name>
+<RefKind>ActiveX</RefKind>
+<ActiveXType>
+<GUID>{000208D8-0000-0000-C000-000000000046}</GUID>
+</ActiveXType>
+<Val>0x00000000</Val>
+</Refnum>
+<EW>
+<Name>Store Location</Name>
+<Choice>Share Only</Choice>
+<Choice>Share + Data Folder</Choice>
+<Val>0</Val>
+</EW>
+<Path>
+<Name>Share Folder</Name>
+<Val>C:\Excel Log</Val>
+</Path>
+<Path>
+<Name>Workbook File with Path</Name>
+<Val></Val>
+</Path>
+<Path>
+<Name>D1 Data Folder</Name>
+<Val></Val>
+</Path>
+<I32>
+<Name>Last Record LCN</Name>
+<Val>0</Val>
+</I32>
+<I32>
+<Name>Last Log Row</Name>
+<Val>0</Val>
+</I32>
+<Boolean>
+<Name>Valid</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Log Enabled</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Append</Name>
+<Val>0</Val>
+</Boolean>
+<Refnum>
+<Name>D2 Workbook</Name>
+<RefKind>ActiveX</RefKind>
+<ActiveXType>
+<GUID>{000208DA-0000-0000-C000-000000000046}</GUID>
+</ActiveXType>
+<Val>0x00000000</Val>
+</Refnum>
+<Path>
+<Name>D2 Share Folder</Name>
+<Val>C:\</Val>
+</Path>
+<EW>
+<Name>D2 Store Location</Name>
+<Choice>Share Only</Choice>
+<Choice>Share + Data Folder</Choice>
+<Val>0</Val>
+</EW>
+<Refnum>
+<Name>D2 Worksheet</Name>
+<RefKind>ActiveX</RefKind>
+<ActiveXType>
+<GUID>{000208D8-0000-0000-C000-000000000046}</GUID>
+</ActiveXType>
+<Val>0x00000000</Val>
+</Refnum>
+<Path>
+<Name>D2 Workbook File with Path</Name>
+<Val></Val>
+</Path>
+<Path>
+<Name>D2 Data Folder</Name>
+<Val></Val>
+</Path>
+<I32>
+<Name>D2 Last Record LCN</Name>
+<Val>0</Val>
+</I32>
+<I32>
+<Name>D2 Last Log Row</Name>
+<Val>0</Val>
+</I32>
+<Boolean>
+<Name>D2 Valid</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>D2 Log Enabled</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>D2 Append</Name>
+<Val>0</Val>
+</Boolean>
+<Refnum>
+<Name>D2 Application</Name>
+<RefKind>ActiveX</RefKind>
+<ActiveXType>
+<GUID>{000208D5-0000-0000-C000-000000000046}</GUID>
+</ActiveXType>
+<Val>0x00000000</Val>
+</Refnum>
+<Boolean>
+<Name>ShareWB</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>D2 ShareWB</Name>
+<Val>0</Val>
+</Boolean>
+<Refnum>
+<Name>D1AvgQ</Name>
+<RefKind>Queue</RefKind>
+<Val>0x00000000</Val>
+</Refnum>
+<Refnum>
+<Name>D2AvgQ</Name>
+<RefKind>Queue</RefKind>
+<Val>0x00000000</Val>
+</Refnum>
+</Cluster>
+"
+4/24/2026 3:09:47 PM,0,Debug,WT8-GUI,83119662,Excel Tools,"Post-init Error Out:
+<Cluster>
+<Name>error out</Name>
+<NumElts>9</NumElts>
+<Boolean>
+<Name>Unhandled Error</Name>
+<Val>0</Val>
+</Boolean>
+<Cluster>
+<Name>Error</Name>
+<NumElts>3</NumElts>
+<Boolean>
+<Name>status</Name>
+<Val>0</Val>
+</Boolean>
+<I32>
+<Name>code</Name>
+<Val>0</Val>
+</I32>
+<String>
+<Name>source</Name>
+<Val>ExcelTools</Val>
+</String>
+</Cluster>
+<EB>
+<Name>Message Type</Name>
+<Choice>Code</Choice>
+<Choice>Text</Choice>
+<Val>0</Val>
+</EB>
+<I8>
+<Name>Number of Values</Name>
+<Val>0</Val>
+</I8>
+<Array>
+<Name>Msg Value Type</Name>
+<Dimsize>0</Dimsize>
+<I32>
+<Name>Msg Type</Name>
+<Val></Val>
+</I32>
+</Array>
+<Array>
+<Name>Msg Ints</Name>
+<Dimsize>0</Dimsize>
+<I32>
+<Name>Offset</Name>
+<Val></Val>
+</I32>
+</Array>
+<Array>
+<Name>Msg Real Values</Name>
+<Dimsize>0</Dimsize>
+<SGL>
+<Name>Msg Value</Name>
+<Val></Val>
+</SGL>
+</Array>
+<Array>
+<Name>Msg String Values</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>Msg Value</Name>
+<Val></Val>
+</String>
+</Array>
+<EL>
+<Name>Severity (Emergency)</Name>
+<Choice>Information</Choice>
+<Choice>Warning</Choice>
+<Choice>Emergency</Choice>
+<Val>2</Val>
+</EL>
+</Cluster>
+"
+4/24/2026 3:09:47 PM,1,Info,WT8-GUI,83119663,ExcelTools,ExcelTools Started/Initialized
+4/24/2026 3:09:48 PM,32,Debug,WT8-GUI,83119664,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.ExcelTools.llb\Performance Functions Excel Tools.vi Task Started.
+4/24/2026 3:09:48 PM,3,Info,WT8-GUI,83119665,POSTPOINT,POSTPOINT Reload Database Settings Complete
+4/24/2026 3:09:48 PM,1,Info,WT8-GUI,83119666,CANEXPORT,CANEXPORT Started/Initialized
+4/24/2026 3:09:48 PM,32,Debug,WT8-GUI,83119667,,C:\Program Files\Jacobs\Test SLATE\Jacobs.TestSLATE.Filter.llb\PERFORMANCE FUNCTIONS.FILTER.POSTPOINT.vi Task Started.
+4/24/2026 3:09:48 PM,0,Warning,WT8-GUI,83119668,NI_DAQmx/Set Task to Slow Data-Rate.vi,"The NI-DAQmx AI Task ""AI_00"" device maximum Sample Rate is 90 Hz, although it is configured at 500 Hz. The Sample Rate for this device is currently running at 50 Hz. Stop the test and change the NI-DAQ-mx Source Sample Rate (or change your hardware) if this rate is not acceptable."
+4/24/2026 3:09:48 PM,0,Warning,WT8-GUI,83119669,NI_DAQmx/Set Task to Slow Data-Rate.vi,"The NI-DAQmx AI Task ""AI_08"" device maximum Sample Rate is 90 Hz, although it is configured at 500 Hz. The Sample Rate for this device is currently running at 50 Hz. Stop the test and change the NI-DAQ-mx Source Sample Rate (or change your hardware) if this rate is not acceptable."
+4/24/2026 3:09:56 PM,1,Info,WT8-GUI,83119670,POSTPOINT,POSTPOINT Started/Initialized
+4/24/2026 3:10:02 PM,1,Info,WT8-GUI,83119671,ELMS,ELMS Started/Initialized
+4/24/2026 3:10:02 PM,2,Info,WT8-GUI,83119672,ELMS,ELMS entering Idle mode
+4/24/2026 3:10:03 PM,1,Info,WT8-GUI,83119673,DATASTORE,DATASTORE Started/Initialized
+4/24/2026 3:10:03 PM,0,Info,WT8-GUI,83119674,DATASTORE,Created data file C:\Data\_Facility\DE9956_Ohio State Univ FSAE_aero_6_240426_151002\LOG.dat
+4/24/2026 3:10:03 PM,4,Info,WT8-GUI,83119675,DATASTORE,Log Storage ready to store data. Initialization  Complete
+4/24/2026 3:10:03 PM,97,Info,WT8-GUI,83119676,DATASTORE,"Log (Record 1) data storage initiated:  Duration Continuous, Samples to Average 60, Rate 1 min 0.00 secs ."
+4/24/2026 3:10:03 PM,0,Info,WT8-GUI,83119677,DATASTORE,Created data file C:\Data\_Facility\DE9956_Ohio State Univ FSAE_aero_6_240426_151002\D2.dat
+4/24/2026 3:10:03 PM,0,Debug,WT8-GUI,83119678,Custom Init,"NEW DATA FOLDER: C:\Data\_Facility\DE9956_Ohio State Univ FSAE_aero_6_240426_151002
+Use Custom Init: 0
+Custom Init: C:\Data\CustomInit\Custom_Init_Template.xls"
+4/24/2026 3:10:03 PM,4,Info,WT8-GUI,83119679,DATASTORE,Group 2 ready to store data. Initialization  Complete
+4/24/2026 3:10:03 PM,0,Info,WT8-GUI,83119680,DATASTORE,Created data file C:\Data\_Facility\DE9956_Ohio State Univ FSAE_aero_6_240426_151002\D1.dat
+4/24/2026 3:10:03 PM,4,Info,WT8-GUI,83119681,DATASTORE,Burst ready to store data. Initialization  Complete
+4/24/2026 3:10:03 PM,0,Debug,WT8-GUI,83119682,Custom Init,"NEW DATA FOLDER: C:\Data\_Facility\DE9956_Ohio State Univ FSAE_aero_6_240426_151002
+Use Custom Init: 0
+Custom Init: C:\Data\CustomInit\Custom_Init_Template.xls"
+4/24/2026 3:10:03 PM,4,Info,WT8-GUI,83119683,DATASTORE,Group 1 ready to store data. Initialization  Complete
+4/24/2026 3:10:04 PM,1,Info,WT8-GUI,83119684,NI-DAQmx,NI-DAQmx Started/Initialized
+4/24/2026 3:10:06 PM,1,Info,WT8-GUI,83119685,ADTMGR,ADTMGR Started/Initialized
+4/24/2026 3:10:06 PM,2,Info,WT8-GUI,83119686,ADTMGR,ADTMGR entering Idle mode
+4/24/2026 3:10:06 PM,0,Debug,WT8-GUI,83119687,"Spawn VI.vi/Ford.TestSLATE.ADTMgr.lvlib:STOPPED FUNCTION.vi/Ford.TestSLATE.ADTMgr.lvlib:Performance Functions.vi
+",C:\Program Files\Jacobs\Test SLATE\Ford.TestSLATE.ConvSelectCriteria.llb\Select Convergence Criteria.vi
+4/24/2026 3:10:07 PM,1,Info,WT8-GUI,83119688,HM,Channel Error Detection Started/Initialized
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119689,HM,Overscaled Channel detected at Tag AI_TK_000
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119690,HM,Overscaled Channel detected at Tag AI_TK_009
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119691,HM,Overscaled Channel detected at Tag AI_TK_010
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119692,HM,Overscaled Channel detected at Tag AI_TK_011
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119693,HM,Overscaled Channel detected at Tag AI_TK_012
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119694,HM,Overscaled Channel detected at Tag AI_TK_013
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119695,HM,Overscaled Channel detected at Tag AI_TK_014
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119696,HM,Overscaled Channel detected at Tag AI_TK_015
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119697,HM,Overscaled Channel detected at Tag AI_TK_016
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119698,HM,Overscaled Channel detected at Tag AI_TK_017
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119699,HM,Overscaled Channel detected at Tag AI_TK_018
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119700,HM,Overscaled Channel detected at Tag AI_TK_001
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119701,HM,Overscaled Channel detected at Tag AI_TK_019
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119702,HM,Overscaled Channel detected at Tag AI_TK_020
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119703,HM,Overscaled Channel detected at Tag AI_TK_021
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119704,HM,Overscaled Channel detected at Tag AI_TK_022
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119705,HM,Overscaled Channel detected at Tag AI_TK_023
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119706,HM,Overscaled Channel detected at Tag AI_TK_024
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119707,HM,Overscaled Channel detected at Tag AI_TK_025
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119708,HM,Overscaled Channel detected at Tag AI_TK_026
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119709,HM,Overscaled Channel detected at Tag AI_TK_027
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119710,HM,Overscaled Channel detected at Tag AI_TK_028
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119711,HM,Overscaled Channel detected at Tag AI_TK_002
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119712,HM,Overscaled Channel detected at Tag AI_TK_029
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119713,HM,Overscaled Channel detected at Tag AI_TK_030
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119714,HM,Overscaled Channel detected at Tag AI_TK_003
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119715,HM,Overscaled Channel detected at Tag AI_TK_004
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119716,HM,Overscaled Channel detected at Tag AI_TK_005
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119717,HM,Overscaled Channel detected at Tag AI_TK_006
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119718,HM,Overscaled Channel detected at Tag AI_TK_007
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119719,HM,Overscaled Channel detected at Tag AI_TK_008
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119720,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_000
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119721,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_001
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119722,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_003
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119723,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_004
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119724,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_006
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119725,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_007
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119726,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_008
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119727,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_009
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119728,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_010
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119729,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_011
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119730,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_012
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119731,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_013
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119732,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_014
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119733,HM,Overscaled Channel detected at Tag AI_Volts_Shunt_015
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119734,HM,Overscaled Channel detected at Tag AI_Strain_000
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119735,HM,Overscaled Channel detected at Tag AI_Strain_001
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119736,HM,Overscaled Channel detected at Tag AI_Strain_002
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119737,HM,Overscaled Channel detected at Tag AI_Strain_003
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119738,HM,Overscaled Channel detected at Tag AI_Strain_004
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119739,HM,Overscaled Channel detected at Tag AI_Strain_005
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119740,HM,Overscaled Channel detected at Tag AI_Strain_006
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119741,HM,Overscaled Channel detected at Tag AI_Strain_007
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119742,HM,Overscaled Channel detected at Tag AI_TT_000
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119743,HM,Overscaled Channel detected at Tag AI_TT_009
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119744,HM,Overscaled Channel detected at Tag AI_TT_010
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119745,HM,Overscaled Channel detected at Tag AI_TT_011
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119746,HM,Overscaled Channel detected at Tag AI_TT_012
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119747,HM,Overscaled Channel detected at Tag AI_TT_013
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119748,HM,Overscaled Channel detected at Tag AI_TT_014
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119749,HM,Overscaled Channel detected at Tag AI_TT_015
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119750,HM,Overscaled Channel detected at Tag AI_TT_016
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119751,HM,Overscaled Channel detected at Tag AI_TT_017
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119752,HM,Overscaled Channel detected at Tag AI_TT_018
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119753,HM,Overscaled Channel detected at Tag AI_TT_001
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119754,HM,Overscaled Channel detected at Tag AI_TT_019
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119755,HM,Overscaled Channel detected at Tag AI_TT_020
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119756,HM,Overscaled Channel detected at Tag AI_TT_021
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119757,HM,Overscaled Channel detected at Tag AI_TT_022
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119758,HM,Overscaled Channel detected at Tag AI_TT_023
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119759,HM,Overscaled Channel detected at Tag AI_TT_024
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119760,HM,Overscaled Channel detected at Tag AI_TT_025
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119761,HM,Overscaled Channel detected at Tag AI_TT_026
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119762,HM,Overscaled Channel detected at Tag AI_TT_027
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119763,HM,Overscaled Channel detected at Tag AI_TT_028
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119764,HM,Overscaled Channel detected at Tag AI_TT_002
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119765,HM,Overscaled Channel detected at Tag AI_TT_029
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119766,HM,Overscaled Channel detected at Tag AI_TT_030
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119767,HM,Overscaled Channel detected at Tag AI_TT_003
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119768,HM,Overscaled Channel detected at Tag AI_TT_004
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119769,HM,Overscaled Channel detected at Tag AI_TT_005
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119770,HM,Overscaled Channel detected at Tag AI_TT_006
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119771,HM,Overscaled Channel detected at Tag AI_TT_007
+4/24/2026 3:10:07 PM,202,Warning,WT8-GUI,83119772,HM,Overscaled Channel detected at Tag AI_TT_008
